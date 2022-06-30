@@ -41,7 +41,7 @@ $(function () {
         
     let msg={};
         
-        var [price1,price2,price3,price4,price5,price6] = [200,200,400,600,800,1000];
+        var [price1,price2,price3,price4,price5,price6] = [200,200,400,600,800,1000];    //　メダカの値段
         
         var kk = [[breed1,num1,price1],
               [breed2,num2,price2],
@@ -59,7 +59,7 @@ let ppn=[]
 for(var i=0;i<kk.length;i++){
            if(kk[i][1] >= 1) {
                
-  msg =msg + ["種類："+ kk[i][0] + "\n数量：" + kk[i][1] + "\n価格：" + kk[i][2] + "円"] + "\n"+ "============================="+ "\n"  
+  msg =msg + ["種類："+ kk[i][0] + "\n価格：" + kk[i][2] + "円"　+ "\n数量：" + kk[i][1] ] + "\n"+ "============================="+ "\n"  
            }else{
     }
   }  
