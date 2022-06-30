@@ -41,14 +41,14 @@ $(function () {
         
     let msg={};
         
+        var [price1,price2,price3,price4,price5,price6] = [200,200,400,600,800,1000];
         
-        
-        var kk = [[breed1,num1,time1],
-              [breed2,num2,time2],
-              [breed3,num3,time3],
-              [breed4,num4,time4],
-              [breed5,num5,time5],
-              [breed6,num6,time6]];
+        var kk = [[breed1,num1,price1],
+              [breed2,num2,price2],
+              [breed3,num3,price3],
+              [breed4,num4,price4],
+              [breed5,num5,price5],
+              [breed6,num6,price6]];
         
       
  msg =[]
