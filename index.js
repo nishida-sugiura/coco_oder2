@@ -28,7 +28,7 @@ $(function () {
         var num6 = $('input[name="num6"]').val();
         var breed6 = $('input[name="breed6"]').val();   
         
-        
+        var daytime = $('input[name="daytime"]').val();
         
         // var date = $('input[name="date"]').val();
         // var tool = $('input[name="tool"]').val();
@@ -64,7 +64,7 @@ for(var i=0;i<kk.length;i++){
     }
   }  
         
-        
+       msg = msg + ["希望日時：" + daytime] ;
 
         
         
