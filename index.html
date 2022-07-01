@@ -131,8 +131,7 @@
 
 <form>
     <h3>希望日時を入力してください。</h3>
- <h3><div> <input type="date" class="button" name="daytime" required></div></h3>
-
+ <h3><div> <input type="date" class="button" name="daytime" id="tomorrow" required></div></h3>
 
 <h3><div><input type="submit" value="予約する" class="button" ></div></h3>
 </form>
@@ -144,6 +143,25 @@
 
 
 
+<script>
+window.addEventListener('DOMContentLoaded', ()=>{
+  const d=new Date();
+  d.setDate(d.getDate()+2);
+  tomorrow.setAttribute("min",d.toISOString().substr(0,10));
+    
+  const d1=new Date();
+  d1.setDate(d1.getDate()+2+28);
+  tomorrow.setAttribute("max",d1.toISOString().substr(0,10));  
+    
+}); 
+    var today = new Date();
+    today.setDate(today.getDate());
+    var yyyy = today.getFullYear();
+    var mm = ("0"+(today.getMonth()+1)).slice(-2);
+    var dd = ("0"+today.getDate()).slice(-2);
+    document.getElementById("tomorrow").value=yyyy+'-'+mm+'-'+dd;    
+    
+</script>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
