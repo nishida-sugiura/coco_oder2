@@ -264,5 +264,105 @@ SP
 
 
 
+.button {
+  display       : inline-block;
+  font-size     : 27pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 16px 53px;   /* 余白       */
+  background    : #003300;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 1px 1px 4px #666666;  /* 影の設定 */
+  border        : 2px solid #003300;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #003300;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 36px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+}
+input[type="date"] {
+  position: relative;
+  padding: 0 10px;
+  width: 300px;
+  height: 60px;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #999;
+}
+
+
+label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -43px;
+  width: 36px;
+  height: 36px;
+  background-color: #06c;
+  background-image: url("icon_calendar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+input[type="date"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+input[type="date"]::-webkit-clear-button{
+  -webkit-appearance: none;
+}
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 0;
+  width: 300px;
+  height: 60px;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
  </style>
