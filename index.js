@@ -64,7 +64,7 @@ for(var i=0;i<kk.length;i++){
     }
   }  
         
-       msg = msg + ["希望日時：" + daytime] ;
+       msg = msg + ["受取日：" + daytime] ;
 
         
         
