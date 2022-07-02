@@ -9,7 +9,7 @@ $(function () {
         var breed1 = $('input[name="breed1"]').val();
         
         var time2 = $('input[name="time2"]').val();
-        var num2 = $('input[name="num2"]').val();
+        var num2 = $('select[name="num2"]').val();
         var breed2 = $('input[name="breed2"]').val();
         
         var time3 = $('input[name="time3"]').val();
