@@ -5,7 +5,7 @@ $(function () {
     // 送信
     $('form').submit(function () {
         var time1 = $('input[name="time1"]').val();
-        var num1 = $('input[name="num1"]').val();
+        var num1 = $('select[name="num1"]').val();
         var breed1 = $('input[name="breed1"]').val();
         
         var time2 = $('input[name="time2"]').val();
